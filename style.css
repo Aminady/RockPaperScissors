@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.title-box {
+    background: black;
+    height: 60px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    color: white;
+}
+
+a {
+    width: 50px;
+}
+
+#git {
+    cursor: pointer;
+    fill: white;
+    width: 60%;
+    height: 80%;
+
+}
+
+.btn-container {
+    width: 50%;
+    height: 400px;
+    color: white;
+    border: none;
+    display: block;
+    margin: auto;
+    font-size: 2em;
+    background: black;    
+    box-shadow: 1px 5px 8px rgba(97, 96, 96, 0.589);
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: end;
+    padding: 30px;
+}
+
+.btn {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 80%;
+    margin-top: 20px;
+    border: none;
+    background: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.my-para {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px
+}
+
+.score {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.game-over {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.replay {
+    margin: auto;
+    color: white;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.retry-btn {
+    width: 80%;
+    height: 70%;
+
+}
