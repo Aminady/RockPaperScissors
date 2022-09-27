@@ -105,8 +105,3 @@ function disableBtn(cmd) {
     return element.style.pointerEvents = `${cmd}`
   }) 
 }
-// function disableBtn(cmd) {
-//   document.querySelectorAll("img").forEach(element => { 
-//     return element.style.pointerEvents = `${cmd}`
-//   }) 
-// }
