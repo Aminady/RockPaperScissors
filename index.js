@@ -60,7 +60,7 @@ function theGame() {
     }
     gameOver()
   });
-}
+};
 
 theGame();
 
@@ -101,7 +101,12 @@ replay.addEventListener('click', () => {
 })
 
 function disableBtn(cmd) {
-  document.querySelectorAll("img").forEach(element => { 
+  document.querySelectorAll(".btn").forEach(element => { 
     return element.style.pointerEvents = `${cmd}`
   }) 
 }
+// function disableBtn(cmd) {
+//   document.querySelectorAll("img").forEach(element => { 
+//     return element.style.pointerEvents = `${cmd}`
+//   }) 
+// }

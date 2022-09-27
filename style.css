@@ -20,7 +20,10 @@ h1{
 a {
     width: 50px;
 }
-
+ 
+#rock {
+    fill: pink;
+}
 #git {
     cursor: pointer;
     fill: white;
@@ -95,4 +98,10 @@ a {
     width: 80%;
     height: 70%;
 
+}
+
+.tr {
+    width: 50px;
+    height: 50px;
+    fill: pink;
 }
