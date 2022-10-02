@@ -5,8 +5,8 @@
 
 .title-box {
     background: black;
-    height: 60px;
-    margin-bottom: 100px;
+    height: 10vh;
+    margin-bottom: 80px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -14,6 +14,7 @@
 }
 
 h1{
+    font-size: 1.5em;
     color: white;
 }
 
@@ -73,6 +74,7 @@ a {
 .my-para {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 30px
 }
@@ -80,6 +82,7 @@ a {
 .score {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 30px;
 }
@@ -110,4 +113,12 @@ a {
     width: 50px;
     height: 50px;
     fill: pink;
+}
+
+@media screen and (max-width: 500px) {
+    .btn-container {
+        width: 95%;
+        height: 65vh;
+        font-size: 1.7em;
+    }
 }
