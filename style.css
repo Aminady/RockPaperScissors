@@ -115,7 +115,7 @@ a {
     fill: pink;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     .btn-container {
         width: 95%;
         height: 65vh;
