@@ -12,8 +12,11 @@ let gameOverText = document.querySelector(".game-over");
 let replay = document.querySelector('.replay');
 
 let compPara = document.createElement("p");
+compPara.className = 'computer-paragraphe'
 let monPara = document.createElement("p");
+monPara.className = 'my-paragraphe'
 let paragraphe = document.createElement("p");
+paragraphe.className = 'paragraphe'
 
 myPara.appendChild(monPara);
 myPara.appendChild(paragraphe);

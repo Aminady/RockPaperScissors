@@ -35,7 +35,7 @@ a {
 
 .btn-container {
     width: 50%;
-    height: 400px;
+    height: 65vh;
     color: white;
     border: none;
     display: block;
@@ -72,13 +72,28 @@ a {
 }
 
 .my-para {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 30px
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    row-gap: 20px;
 }
 
+.my-paragraphe {
+    grid-column: 1/2;
+    grid-row: 1 / 2;
+}
+
+.computer-paragraphe {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.paragraphe {
+    text-align: center;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
 .score {
     display: flex;
     flex-direction: row;
