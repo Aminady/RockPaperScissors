@@ -3,7 +3,7 @@ const paper = document.getElementById("paper");
 const scissors = document.getElementById("scissors");
 const boutons = document.querySelectorAll(".btn");
 const computer = ["Rock", "Paper", "Scissors"];
-const btnContainer = document.querySelector(".btn-container");
+const btnContainer = document.querySelector(".btn-grid");
 const myPara = document.querySelector(".my-para");
 const score = document.querySelector(".score");
 let monScore = document.querySelector(".my-score");
@@ -33,6 +33,7 @@ monScore.textContent = "You: 0";
 function theGame() {
 
   btnContainer.addEventListener("click", (e) => {
+    console.log(toUpperCase(e.target.id));
     if (e.target.id === "") {
       return `${compPara.textContent} = ""  ${monPara.textContent} = ""`;
     }
@@ -42,14 +43,14 @@ function theGame() {
       (e.target.id === "paper" && compPara.textContent == "Paper") ||
       (e.target.id === "scissors" && compPara.textContent == "Scissors")
     ) {
-      monPara.textContent = e.target.alt;
+      monPara.textContent = toUpperCase(e.target.id);
       paragraphe.textContent = "Tie Break";
     } else if (
       (e.target.id === "rock" && compPara.textContent == "Paper") ||
       (e.target.id === "paper" && compPara.textContent == "Scissors") ||
       (e.target.id === "scissors" && compPara.textContent == "Rock")
     ) {
-      monPara.textContent = e.target.alt;
+      monPara.textContent = toUpperCase(e.target.id);
       paragraphe.textContent = "You Lost";
       sonScore.textContent = `Computer: ${(compScore += 1)}`;
     } else if (
@@ -57,7 +58,7 @@ function theGame() {
       (e.target.id === "paper" && compPara.textContent == "Rock") ||
       (e.target.id === "scissors" && compPara.textContent == "Paper")
     ) {
-      monPara.textContent = e.target.alt;
+      monPara.textContent = toUpperCase(e.target.id);
       paragraphe.textContent = "You Won";
       monScore.textContent = `You: ${(myScore += 1)}`;
     }
@@ -108,3 +109,9 @@ function disableBtn(cmd) {
     return element.style.pointerEvents = `${cmd}`
   }) 
 }
+
+function toUpperCase(input) {
+  return input.charAt(0).toUpperCase() + input.slice(1)
+}
+
+
