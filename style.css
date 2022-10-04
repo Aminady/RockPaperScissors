@@ -103,12 +103,18 @@ footer {
     place-items: center;
 }
 
+a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .social {
+    width: 25%;
     margin-top: 100px;
-    width: 20%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    place-self: center;
+    display: flex;
+    flex-direction: row;
 }
 
 .footer-icon {
@@ -123,7 +129,13 @@ footer {
         font-size: 1.7em;
     }
     .social {
-        width: 50%;
+        width: 70%;
     }
+    #rock:active, #paper:active, #scissors:active {
+        background: rgb(19, 19, 77);
+        transition-duration: 0.1s;
+        fill: pink;
+    }
+    
 }
 
